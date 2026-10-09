@@ -3,676 +3,814 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DPD Perhiptani Tanah Bumbu</title>
+    <title>DPD Perhiptani Tanah Bumbu | Media Information Center</title>
     <meta
       name="description"
-      content="Landing page resmi DPD Perhiptani Tanah Bumbu - media informasi, kegiatan, dan komitmen petani di Tanah Bumbu."
+      content="Landing page resmi DPD Perhiptani Kabupaten Tanah Bumbu sebagai pusat informasi organisasi, kegiatan, dan profil tokoh dalam mendukung pertanian dan kesejahteraan petani."
     />
     <style>
       :root {
-        --green-900: #113b2c;
-        --green-700: #1d5b43;
-        --green-500: #2f8f5b;
-        --green-200: #dff5e8;
-        --yellow-400: #f7c948;
-        --cream: #f9f7f2;
-        --text: #1b1b1b;
-        --muted: #5b5b5b;
+        --green-950: #0f2c1d;
+        --green-900: #123b26;
+        --green-800: #1c4d38;
+        --green-700: #28684b;
+        --green-600: #36815b;
+        --green-500: #49a06d;
+        --green-200: #dfeee4;
+        --green-100: #edf7ee;
+        --brown: #8a5a2b;
+        --text: #1c251f;
+        --muted: #5f6d62;
         --white: #ffffff;
-        --shadow: 0 20px 45px rgba(17, 59, 44, 0.12);
+        --shadow: 0 18px 40px rgba(18, 59, 38, 0.12);
       }
 
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.6;
         color: var(--text);
-        background: var(--cream);
+        background: #f5f8f5;
       }
-
-      img {
-        max-width: 100%;
-        display: block;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
+      a { color: inherit; text-decoration: none; }
+      img { max-width: 100%; display: block; }
+      p { margin: 0 0 1rem; }
+      ul { margin: 0; padding-left: 1.2rem; }
+      li { margin-bottom: 0.45rem; }
       .container {
-        width: min(1120px, calc(100% - 32px));
+        width: min(1140px, calc(100% - 32px));
         margin: 0 auto;
       }
-
+      .topbar {
+        background: var(--green-950);
+        color: var(--white);
+        font-size: 0.92rem;
+        padding: 0.7rem 0;
+      }
+      .topbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .topbar .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: rgba(255,255,255,0.88);
+      }
       header {
-        background: rgba(17, 59, 44, 0.95);
         position: sticky;
         top: 0;
-        z-index: 100;
-        backdrop-filter: blur(6px);
+        z-index: 50;
+        background: rgba(255,255,255,0.92);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(18,59,38,0.08);
       }
-
-      .nav {
+      nav {
+        min-height: 78px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-height: 74px;
+        gap: 20px;
       }
-
       .brand {
         display: flex;
         align-items: center;
         gap: 12px;
-        color: var(--white);
         font-weight: 700;
-        letter-spacing: 0.03em;
+        color: var(--green-900);
       }
-
       .brand-mark {
-        width: 42px;
-        height: 42px;
+        width: 46px;
+        height: 46px;
         border-radius: 50%;
-        background: linear-gradient(135deg, var(--yellow-400), #f4a935);
+        background: linear-gradient(135deg, var(--green-700), var(--green-500));
         display: grid;
         place-items: center;
-        color: var(--green-900);
-        font-weight: 900;
+        color: var(--white);
+        font-weight: 800;
       }
-
+      .brand-text {
+        font-size: 0.92rem;
+        line-height: 1.2;
+      }
       .nav-links {
         display: flex;
-        gap: 22px;
-        color: rgba(255,255,255,0.88);
-        font-size: 0.96rem;
+        align-items: center;
+        gap: 24px;
+        font-weight: 600;
+        color: var(--green-900);
       }
-
-      .nav-links a:hover {
-        color: var(--yellow-400);
-      }
-
+      .nav-links a:hover { color: var(--green-600); }
       .btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         border: none;
         border-radius: 999px;
-        padding: 14px 24px;
+        padding: 0.9rem 1.5rem;
         font-weight: 700;
         cursor: pointer;
         transition: 0.2s ease;
       }
-
       .btn-primary {
-        background: var(--yellow-400);
-        color: #1f1f1f;
+        background: linear-gradient(135deg, var(--green-700), var(--green-500));
+        color: var(--white);
+        box-shadow: var(--shadow);
       }
-
-      .btn-primary:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 10px 20px rgba(247, 201, 73, 0.25);
-      }
-
       .btn-secondary {
-        background: transparent;
-        color: var(--white);
-        border: 1px solid rgba(255,255,255,0.38);
+        border: 1px solid rgba(18,59,38,0.12);
+        background: var(--white);
+        color: var(--green-900);
       }
-
+      .btn:hover { transform: translateY(-1px); }
       .hero {
-        background: linear-gradient(rgba(17, 59, 44, 0.72), rgba(17, 59, 44, 0.72)),
-          url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+        position: relative;
+        background: linear-gradient(135deg, rgba(11, 33, 23, 0.94), rgba(44, 94, 70, 0.80)),
+          url('https://images.unsplash.com/photo-1464226184884-fa52acb6b7f2?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
         color: var(--white);
-        padding: 110px 0 90px;
+        padding: 90px 0 80px;
       }
-
       .hero-grid {
         display: grid;
         grid-template-columns: 1.2fr 0.8fr;
         gap: 40px;
         align-items: center;
       }
-
       .eyebrow {
         display: inline-block;
-        padding: 8px 14px;
-        background: rgba(255,255,255,0.08);
-        border: 1px solid rgba(255,255,255,0.18);
+        border: 1px solid rgba(255,255,255,0.2);
+        padding: 0.5rem 0.9rem;
         border-radius: 999px;
+        background: rgba(255,255,255,0.08);
+        margin-bottom: 1rem;
+        font-size: 0.84rem;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
-        letter-spacing: 0.12em;
-        font-size: 0.7rem;
-        margin-bottom: 18px;
       }
-
       h1 {
-        font-size: clamp(2.3rem, 4vw, 4.25rem);
-        line-height: 1.1;
-        margin: 0 0 20px;
+        margin: 0 0 1rem;
+        font-size: clamp(2.5rem, 5vw, 4.6rem);
+        line-height: 1.04;
       }
-
-      .hero-copy {
-        font-size: 1.07rem;
-        color: rgba(255,255,255,0.86);
-        max-width: 620px;
+      .hero p {
+        max-width: 660px;
+        font-size: 1.05rem;
+        color: rgba(255,255,255,0.88);
       }
-
       .hero-actions {
         display: flex;
         flex-wrap: wrap;
-        gap: 14px;
-        margin-top: 28px;
+        gap: 16px;
+        margin-top: 2rem;
       }
-
-      .stats {
-        background: rgba(255,255,255,0.08);
-        border: 1px solid rgba(255,255,255,0.18);
-        border-radius: 20px;
-        backdrop-filter: blur(2px);
-        padding: 18px 20px;
+      .hero-stats {
         display: grid;
-        grid-template-columns: repeat(3, minmax(70px, 1fr));
-        gap: 14px;
-        margin-top: 28px;
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+        gap: 16px;
+        margin-top: 2rem;
       }
-
+      .stat {
+        background: rgba(255,255,255,0.07);
+        border: 1px solid rgba(255,255,255,0.14);
+        border-radius: 18px;
+        padding: 1rem;
+      }
       .stat strong {
         display: block;
-        font-size: 1.7rem;
-        margin-bottom: 4px;
+        font-size: 1.6rem;
+        margin-bottom: 0.2rem;
       }
-
-      .stat span {
-        display: block;
-        color: rgba(255,255,255,0.8);
-        font-size: 0.8rem;
-      }
-
       .hero-card {
-        background: rgba(255,255,255,0.97);
+        padding: 26px;
+        border-radius: 28px;
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.14);
+        backdrop-filter: blur(8px);
+      }
+      .mini-panel {
+        background: rgba(255,255,255,0.96);
         color: var(--text);
-        border-radius: 24px;
-        overflow: hidden;
-        box-shadow: var(--shadow);
-      }
-
-      .hero-card img {
-        width: 100%;
-        height: 290px;
-        object-fit: cover;
-      }
-
-      .hero-card-body {
-        padding: 22px 22px 18px;
-      }
-
-      .small-label {
-        font-size: 0.74rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--green-700);
-        font-weight: 800;
-      }
-
-      .hero-card h3 {
-        margin: 10px 0 0;
-        font-size: 1.4rem;
-      }
-
-      section {
-        padding: 88px 0;
-      }
-
-      .section-head {
-        max-width: 700px;
-        margin: 0 auto 36px;
-        text-align: center;
-      }
-
-      .section-head .small-label {
-        display: inline-block;
-        margin-bottom: 12px;
-      }
-
-      .section-head h2 {
-        margin: 0;
-        font-size: clamp(2rem, 3vw, 3rem);
-        color: var(--green-900);
-      }
-
-      .section-head p {
-        margin-top: 14px;
-        color: var(--muted);
-      }
-
-      .feature-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 24px;
-      }
-
-      .feature {
-        background: var(--white);
         border-radius: 22px;
-        padding: 28px 24px;
-        box-shadow: 0 12px 30px rgba(17, 59, 44, 0.06);
-      }
-
-      .feature-icon {
-        width: 58px;
-        height: 58px;
-        border-radius: 16px;
-        background: var(--green-200);
-        display: grid;
-        place-items: center;
-        font-size: 1.7rem;
-        margin-bottom: 18px;
-      }
-
-      .feature h3 {
-        margin: 0 0 10px;
-        font-size: 1.2rem;
-        color: var(--green-900);
-      }
-
-      .feature p {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .about {
-        background: linear-gradient(180deg, #edf9f1, #f9f7f2);
-      }
-
-      .about-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 34px;
-        align-items: center;
-      }
-
-      .about-image {
-        border-radius: 24px;
-        overflow: hidden;
+        padding: 22px;
         box-shadow: var(--shadow);
       }
-
-      .about-image img {
-        width: 100%;
-        height: 520px;
-        object-fit: cover;
-      }
-
-      .about-copy {
-        padding: 12px 0;
-      }
-
-      .about-copy h2 {
-        font-size: clamp(2rem, 3vw, 2.8rem);
+      .mini-panel h3 {
+        margin: 0 0 0.8rem;
         color: var(--green-900);
-        margin: 10px 0 18px;
       }
-
-      .about-copy p {
-        color: var(--muted);
-        margin: 0 0 18px;
-      }
-
-      .check-list {
+      .mini-panel ul {
         list-style: none;
         padding: 0;
-        margin: 26px 0 0;
-        display: grid;
-        gap: 10px;
+        margin: 0;
       }
-
-      .check-list li {
+      .mini-panel li {
         display: flex;
         align-items: center;
         gap: 10px;
-        font-weight: 600;
+        margin: 0;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid rgba(18,59,38,0.08);
+      }
+      .mini-panel li:last-child { border-bottom: none; }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--green-500);
       }
 
-      .check-mark {
-        width: 24px;
-        height: 24px;
-        display: inline-grid;
-        place-items: center;
+      section { padding: 82px 0; }
+      .section-head {
+        max-width: 760px;
+        margin: 0 auto 2.5rem;
+        text-align: center;
+      }
+      .kicker {
+        color: var(--green-700);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-weight: 800;
+        font-size: 0.77rem;
+      }
+      h2 {
+        margin: 0.5rem 0 0.8rem;
+        font-size: clamp(2rem, 3vw, 3rem);
+        line-height: 1.15;
+      }
+      .section-head p { color: var(--muted); }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.06fr;
+        gap: 32px;
+        align-items: center;
+      }
+      .about-image {
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+      .about-text {
+        display: grid;
+        gap: 18px;
+      }
+      .about-text p, .about-text li {
+        color: var(--muted);
+      }
+      .feature-list {
+        display: grid;
+        gap: 12px;
+        margin-top: 8px;
+      }
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        color: var(--green-900);
+      }
+      .feature-item span {
+        width: 28px;
+        height: 28px;
         border-radius: 50%;
         background: var(--green-200);
-        color: var(--green-900);
-        font-weight: 900;
+        display: grid;
+        place-items: center;
+        color: var(--green-800);
       }
 
-      .programs {
-        background: var(--white);
-      }
-
-      .program-grid {
+      .cards {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 26px;
+      }
+      .card {
+        background: var(--white);
+        box-shadow: var(--shadow);
+        border-radius: 22px;
+        padding: 28px 24px;
+      }
+      .icon-box {
+        width: 58px;
+        height: 58px;
+        border-radius: 18px;
+        display: grid;
+        place-items: center;
+        font-size: 1.7rem;
+        background: linear-gradient(135deg, var(--green-200), rgba(73,160,109,0.18));
+        color: var(--green-800);
+        margin-bottom: 1rem;
+      }
+      .card h3 { margin: 0 0 0.7rem; color: var(--green-900); }
+      .card p { margin: 0; color: var(--muted); }
+
+      .mission-box {
+        background: linear-gradient(180deg, #f2f9f3, #eaf5ee);
+        border: 1px solid rgba(18,59,38,0.06);
+        border-radius: 28px;
+        padding: 26px;
+        box-shadow: var(--shadow);
+      }
+      .mission-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 24px;
       }
-
-      .program-card {
-        background: #f7faf7;
-        border-radius: 22px;
-        overflow: hidden;
-        border: 1px solid rgba(17, 59, 44, 0.06);
+      .mission-block {
+        background: rgba(255,255,255,0.7);
+        border-radius: 20px;
+        padding: 22px;
       }
-
-      .program-card img {
-        height: 220px;
-        width: 100%;
-        object-fit: cover;
-      }
-
-      .program-body {
-        padding: 22px 20px 26px;
-      }
-
-      .program-body h3 {
-        margin: 0 0 10px;
+      .mission-block h3 {
+        margin: 0 0 0.8rem;
         color: var(--green-900);
       }
+      .mission-block p, .mission-block li { color: var(--muted); }
 
-      .program-body p {
-        margin: 0;
+      .timeline {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 18px;
+        background: var(--white);
+        border-radius: 22px;
+        padding: 18px 18px 20px;
+        box-shadow: var(--shadow);
+      }
+      .date {
+        font-weight: 700;
+        color: var(--green-700);
+        padding-top: 10px;
+      }
+      .timeline-item h4 {
+        margin: 0 0 0.45rem;
+        color: var(--green-900);
+      }
+      .timeline-item p { margin: 0; color: var(--muted); }
+
+      .profile-grid {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 30px;
+        align-items: center;
+      }
+      .profile-card {
+        background: var(--white);
+        border-radius: 26px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+      }
+      .profile-card img {
+        border-radius: 22px;
+        height: 430px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .quote {
+        font-size: 1.08rem;
         color: var(--muted);
+        background: var(--green-100);
+        border-left: 4px solid var(--green-600);
+        border-radius: 12px;
+        padding: 1rem 1.1rem;
       }
 
       .cta {
-        background: linear-gradient(135deg, var(--green-900), var(--green-700));
-        padding: 70px 0;
+        background: linear-gradient(135deg, var(--green-800), var(--green-600));
+        color: var(--white);
       }
-
       .cta-box {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 22px;
+        gap: 24px;
+        flex-wrap: wrap;
+        border-radius: 26px;
+        padding: 30px 28px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.12);
       }
+      .cta h2 { margin: 0.3rem 0 0; }
 
-      .cta-box h2 {
-        margin: 0 0 8px;
-        font-size: clamp(1.8rem, 2.5vw, 2.7rem);
-        color: var(--white);
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
       }
-
-      .cta-box p {
-        margin: 0;
-        color: rgba(255,255,255,0.8);
+      .contact-card {
+        background: var(--white);
+        border-radius: 24px;
+        padding: 28px;
+        box-shadow: var(--shadow);
       }
+      .contact-list {
+        display: grid;
+        gap: 14px;
+        margin-top: 1rem;
+      }
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .contact-item .label {
+        width: 28px;
+        height: 28px;
+        border-radius: 10px;
+        background: var(--green-200);
+        display: grid;
+        place-items: center;
+        color: var(--green-800);
+        font-weight: 800;
+      }
+      form {
+        display: grid;
+        gap: 14px;
+      }
+      input, textarea {
+        width: 100%;
+        border: 1px solid rgba(18,59,38,0.12);
+        border-radius: 14px;
+        padding: 0.9rem 1rem;
+        font: inherit;
+        background: #f9fbfa;
+      }
+      textarea { min-height: 140px; resize: vertical; }
 
       footer {
-        background: #0d2f22;
+        background: var(--green-900);
         color: rgba(255,255,255,0.82);
-        padding: 38px 0;
+        padding: 24px 0;
       }
-
-      .footer-grid {
+      .footer-row {
         display: flex;
         justify-content: space-between;
-        gap: 24px;
         align-items: center;
-      }
-
-      .footer-brand {
-        font-weight: 700;
-        color: var(--white);
-      }
-
-      .footer-links {
-        display: flex;
-        gap: 18px;
+        gap: 16px;
         flex-wrap: wrap;
       }
 
       @media (max-width: 900px) {
-        .hero-grid,
-        .about-grid,
-        .feature-grid,
-        .program-grid,
-        .cta-box {
+        .hero-grid, .about-grid, .mission-grid, .profile-grid, .contact-grid, .cards, .timeline {
           grid-template-columns: 1fr;
-          display: grid;
         }
-
-        .nav-links {
-          display: none;
-        }
-
-        .cta-box {
-          display: grid;
-          align-items: start;
-        }
+        .nav-links { display: none; }
       }
-
       @media (max-width: 560px) {
-        .hero {
-          padding-top: 80px;
-        }
-
-        .stats {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        .btn {
-          width: 100%;
-        }
-
-        .hero-actions {
-          flex-direction: column;
-        }
+        .hero-stats { grid-template-columns: 1fr; }
+        .hero-actions { display: grid; }
+        .btn { width: 100%; }
       }
     </style>
   </head>
   <body>
+    <div class="topbar">
+      <div class="container">
+        <div class="meta">
+          <span>📍 Tanah Bumbu, Kalimantan Selatan</span>
+          <span>📞 0812-5119-8884</span>
+        </div>
+        <span>MEDIA INFORMATION CENTER · DPD PERHIPTANI KABUPATEN TANAH BUMBU</span>
+      </div>
+    </div>
+
     <header>
-      <div class="container nav">
-        <a href="#top" class="brand" aria-label="Beranda DPD Perhiptani Tanah Bumbu">
-          <span class="brand-mark">P</span>
-          <span>DPD PERHIPTANI<br />TANAH BUMBU</span>
-        </a>
-
-        <nav class="nav-links" aria-label="Navigasi utama">
-          <a href="#tentang">Tentang</a>
-          <a href="#program">Program</a>
-          <a href="#kegiatan">Kegiatan</a>
-          <a href="#kontak">Kontak</a>
+      <div class="container">
+        <nav>
+          <div class="brand">
+            <div class="brand-mark">P</div>
+            <div class="brand-text">
+              PERHIPTANI<br />Tanah Bumbu
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="#tentang">Tentang</a>
+            <a href="#visi-misi">Visi &amp; Misi</a>
+            <a href="#kegiatan">Kegiatan</a>
+            <a href="#profil">Profil Harun</a>
+            <a href="#kontak">Informasi Pers</a>
+          </div>
+          <a class="btn btn-primary" href="#kontak">Jelajahi</a>
         </nav>
-
-        <a class="btn btn-primary" href="#kontak">Hubungi Kami</a>
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
+    <main>
+      <section class="hero" id="beranda">
         <div class="container hero-grid">
           <div>
-            <div class="eyebrow">Media & Informasi</div>
-            <h1>Membangun masa depan pertanian yang lebih maju dan sejahtera.</h1>
-            <p class="hero-copy">
-              DPD Perhiptani Tanah Bumbu hadir sebagai wadah perjuangan, pembinaan,
-              dan penguatan petani agar lebih produktif, mandiri, dan berdaya saing.
+            <div class="eyebrow">Hadir. Bergerak. Memberikan manfaat.</div>
+            <h1>PERHIPTANI TANAH BUMBU</h1>
+            <p>
+              Pusat Informasi Organisasi &amp; Media. DPD PERHIPTANI Kabupaten Tanah Bumbu
+              merupakan organisasi profesi penyuluh pertanian yang berupaya memperkuat
+              kebersamaan penyuluh, mendukung pembangunan pertanian, dan membangun solidaritas
+              bersama petani serta mitra pembangunan.
             </p>
-
             <div class="hero-actions">
-              <a href="#program" class="btn btn-primary">Lihat Program</a>
-              <a href="#tentang" class="btn btn-secondary">Tentang Kami</a>
+              <a class="btn btn-primary" href="#tentang">Tentang Kami</a>
+              <a class="btn btn-secondary" href="#visi-misi">Visi &amp; Misi</a>
             </div>
-
-            <div class="stats" aria-label="Statistik singkat">
+            <div class="hero-stats">
+              <div class="stat">
+                <strong>2020–2026</strong>
+                <span>Rekam jejak</span>
+              </div>
+              <div class="stat">
+                <strong>25+</strong>
+                <span>Agenda</span>
+              </div>
               <div class="stat">
                 <strong>100%</strong>
-                <span>Berbasis<br />petani</span>
-              </div>
-              <div class="stat">
-                <strong>24/7</strong>
-                <span>Komitmen<br />pelayanan</span>
-              </div>
-              <div class="stat">
-                <strong>+15</strong>
-                <span>Program<br />unggulan</span>
+                <span>Solidaritas</span>
               </div>
             </div>
           </div>
 
           <div class="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1464226184884-fa52ac9c8d10?auto=format&fit=crop&w=900&q=80"
-              alt="Petani bekerja di sawah"
-            />
-            <div class="hero-card-body">
-              <div class="small-label">Kita Bekerja</div>
-              <h3>Mendorong pertanian modern dan berkelanjutan di Tanah Bumbu.</h3>
+            <div class="mini-panel">
+              <h3>Prioritas utama</h3>
+              <ul>
+                <li><span class="dot"></span> Memperkuat profesi penyuluh</li>
+                <li><span class="dot"></span> Mendukung petani dan kelompok tani</li>
+                <li><span class="dot"></span> Menjaga solidaritas organisasi</li>
+                <li><span class="dot"></span> Mendorong layanan penyuluhan pertanian</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="tentang" class="about">
-        <div class="container about-grid">
-          <div class="about-image">
-            <img
-              src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1200&q=80"
-              alt="Kegiatan petani dan pertanian"
-            />
-          </div>
-
-          <div class="about-copy">
-            <div class="small-label">Tentang Kami</div>
-            <h2>Peran aktif Perhiptani dalam kemajuan pertanian Tanah Bumbu.</h2>
-            <p>
-              DPD Perhiptani Tanah Bumbu adalah organisasi profesi yang berkomitmen
-              membangun ekosistem pertanian yang sehat, produktif, dan berkeadilan.
-              Kami mendorong petani agar memiliki akses terhadap informasi, teknologi,
-              pendampingan, dan jaringan yang kuat untuk meningkatkan kesejahteraan.
-            </p>
-            <p>
-              Dengan semangat kebersamaan dan inovasi, kami terus mengembangkan
-              program yang berpihak pada petani, pelaku agribisnis, dan masyarakat di
-              wilayah Tanah Bumbu.
-            </p>
-
-            <ul class="check-list">
-              <li><span class="check-mark">✓</span> Pembinaan dan edukasi petani</li>
-              <li><span class="check-mark">✓</span> Peningkatan produktivitas dan kualitas hasil</li>
-              <li><span class="check-mark">✓</span> Penguatan jaringan dan kemitraan usaha</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="program" class="programs">
+      <section id="tentang">
         <div class="container">
           <div class="section-head">
-            <div class="small-label">Program</div>
-            <h2>Inisiatif utama yang kami jalankan</h2>
+            <div class="kicker">Tentang</div>
+            <h2>Satu tempat untuk mengenal organisasi, kegiatan, dan tokoh</h2>
             <p>
-              Berbagai program kami fokus pada pembinaan, pemberdayaan, dan penguatan
-              ekonomi petani secara berkelanjutan.
+              Informasi yang memerlukan konfirmasi resmi tetap perlu diverifikasi kepada pengurus.
+              Halaman ini menjadi titik awal untuk memahami konteks organisasi dan rujukan awal bagi media.
             </p>
           </div>
 
-          <div class="program-grid">
-            <article class="program-card">
-              <img
-                src="https://images.unsplash.com/photo-1500595046743-cd271d190c35?auto=format&fit=crop&w=900&q=80"
-                alt="Pelatihan pertanian"
-              />
-              <div class="program-body">
-                <h3>Pelatihan Petani</h3>
-                <p>Memberikan edukasi dan pendampingan mengenai teknik budidaya, pengelolaan lahan, dan inovasi pertanian.</p>
-              </div>
-            </article>
+          <div class="about-grid">
+            <div class="about-image">
+              <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80" alt="Petani dan pertanian" />
+            </div>
+            <div class="about-text">
+              <p>
+                DPD PERHIPTANI Kabupaten Tanah Bumbu merupakan organisasi profesi penyuluh pertanian
+                yang berupaya memperkuat kebersamaan penyuluh, mendukung kegiatan pembangunan pertanian,
+                serta membangun solidaritas bersama petani dan mitra pembangunan.
+              </p>
+              <p>
+                Di tingkat daerah, PERHIPTANI menjadi ruang komunikasi profesi, pengembangan kapasitas,
+                pertukaran pengalaman, serta dukungan pelayanan penyuluhan pertanian di lapangan.
+              </p>
 
-            <article class="program-card">
-              <img
-                src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=900&q=80"
-                alt="Pemberdayaan masyarakat"
-              />
-              <div class="program-body">
-                <h3>Pemberdayaan Masyarakat</h3>
-                <p>Mendorong kemandirian usaha tani melalui pembinaan, pendampingan, dan penguatan jejaring pelaku agribisnis.</p>
+              <div class="feature-list">
+                <div class="feature-item"><span>✓</span> Memperkuat profesi penyuluh</div>
+                <div class="feature-item"><span>✓</span> Mendukung petani dan kelompok tani</div>
+                <div class="feature-item"><span>✓</span> Menjaga solidaritas dan kebersamaan</div>
               </div>
-            </article>
-
-            <article class="program-card">
-              <img
-                src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=900&q=80"
-                alt="Pemanfaatan teknologi pertanian"
-              />
-              <div class="program-body">
-                <h3>Inovasi Agribisnis</h3>
-                <p>Mengintegrasikan teknologi dan strategi pemasaran untuk meningkatkan nilai tambah hasil produksi petani.</p>
-              </div>
-            </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="kegiatan" class="features">
+      <section style="background:#edf7ee;">
         <div class="container">
           <div class="section-head">
-            <div class="small-label">Kegiatan</div>
-            <h2>Yang kami lakukan untuk petani dan wilayah</h2>
+            <div class="kicker">Poin utama</div>
+            <h2>Mengenal organisasi</h2>
           </div>
-
-          <div class="feature-grid">
-            <div class="feature">
-              <div class="feature-icon">🌾</div>
-              <h3>Seminar & Sosialisasi</h3>
-              <p>Menghadirkan ruang diskusi dan edukasi untuk meningkatkan kapasitas petani di berbagai aspek agribisnis.</p>
+          <div class="cards">
+            <div class="card">
+              <div class="icon-box">🌾</div>
+              <h3>Memperkuat profesi</h3>
+              <p>Mendorong kebersamaan, pertukaran pengalaman, pengembangan kapasitas, dan profesionalisme penyuluh pertanian.</p>
             </div>
-
-            <div class="feature">
-              <div class="feature-icon">🚜</div>
-              <h3>Penguatan Produksi</h3>
-              <p>Menjaga produktivitas pertanian dengan pendekatan modern, efisien, dan berkelanjutan.</p>
+            <div class="card">
+              <div class="icon-box">🤝</div>
+              <h3>Mendukung petani</h3>
+              <p>Menguatkan peran penyuluh dalam mendampingi petani dan kelompok tani serta menerjemahkan program pertanian menjadi kegiatan lapangan.</p>
             </div>
-
-            <div class="feature">
-              <div class="feature-icon">🤝</div>
-              <h3>Kolaborasi Stakeholder</h3>
-              <p>Menjalin kerja sama dengan pemerintah, lembaga, dan pihak terkait untuk memperluas manfaat program.</p>
+            <div class="card">
+              <div class="icon-box">💬</div>
+              <h3>Menjaga solidaritas</h3>
+              <p>Membangun kepedulian dan dukungan sosial antaranggota serta menjaga organisasi melalui partisipasi dan kebersamaan.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="cta" id="kontak">
-        <div class="container cta-box">
-          <div>
-            <h2>Siap mendukung petani dan kemajuan pertanian Tanah Bumbu.</h2>
-            <p>Jangan ragu untuk terhubung dan berkolaborasi bersama kami.</p>
+      <section id="visi-misi">
+        <div class="container">
+          <div class="section-head">
+            <div class="kicker">Visi &amp; Misi</div>
+            <h2>Arah dan landasan organisasi</h2>
+            <p>
+              Rumusan visi dan misi di bawah merupakan penyederhanaan arah kerja untuk halaman informasi publik
+              dan tidak dimaksudkan sebagai kutipan resmi yang harfiah dari dokumen organisasi.
+            </p>
           </div>
-          <a href="mailto:info@tanahbumbu-perhiptani.org" class="btn btn-primary">Kontak Kami</a>
+
+          <div class="mission-box">
+            <div class="mission-grid">
+              <div class="mission-block">
+                <h3>Visi</h3>
+                <p>
+                  “Terwujudnya organisasi profesi penyuluh pertanian yang berasaskan Pancasila,
+                  solid, profesional, mandiri, berjiwa persaudaraan, serta bermanfaat bagi peningkatan
+                  kualitas penyuluhan, kesejahteraan anggota, dan pembangunan pertanian.”
+                </p>
+              </div>
+              <div class="mission-block">
+                <h3>Misi</h3>
+                <ul>
+                  <li>Mengembangkan penyuluhan pertanian yang efektif, efisien, dan produktif.</li>
+                  <li>Meningkatkan mutu, kompetensi, dan profesionalisme penyuluh.</li>
+                  <li>Mengembangkan dan menyebarluaskan ilmu dan teknologi pertanian.</li>
+                  <li>Memperkuat komunikasi, persaudaraan, dan partisipasi anggota.</li>
+                  <li>Membangun kerja sama dengan pemerintah, perguruan tinggi, dan mitra lainnya.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kegiatan">
+        <div class="container">
+          <div class="section-head">
+            <div class="kicker">Kegiatan</div>
+            <h2>Rekam jejak 2020–2026</h2>
+            <p>
+              Kegiatan yang tercatat dalam laporan arus kas dan dokumentasi organisasi memperlihatkan
+              konsolidasi, penguatan kelembagaan, partisipasi program, dan solidaritas sosial.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="date">12 Mei 2020</div>
+              <div>
+                <h4>Dukungan administrasi organisasi</h4>
+                <p>Pembiayaan kebutuhan administrasi organisasi.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="date">10–15 Juni 2023</div>
+              <div>
+                <h4>PENAS Tani XVI</h4>
+                <p>Partisipasi pada kegiatan di Padang, Sumatera Barat.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="date">31 Agustus 2023</div>
+              <div>
+                <h4>Farmer Field Day</h4>
+                <p>Pembelajaran dan pengenalan teknologi pengendalian hama dan penyakit tanaman (HPT).</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="date">9 Desember 2023</div>
+              <div>
+                <h4>Pelatihan Biotron</h4>
+                <p>Pelatihan di Kecamatan Kusan Hulu untuk penguatan kapasitas pertanian ramah lingkungan.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="date">5 September 2024</div>
+              <div>
+                <h4>Rapat konsolidasi</h4>
+                <p>Kegiatan konsolidasi pengurus dan penguatan kelembagaan.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="date">7 Januari 2026</div>
+              <div>
+                <h4>Panen raya dan swasembada pangan</h4>
+                <p>Partisipasi pada kegiatan di Pondok Butun, Batulicin.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="date">22 Mei 2026</div>
+              <div>
+                <h4>Gerakan Tanam Serempak 50.000 Ha</h4>
+                <p>Motivasi kepada petani, kelompok tani, serta penyuluh di Desa Salimuran.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="date">29 Sept 2026</div>
+              <div>
+                <h4>Rapat persiapan MUSDA</h4>
+                <p>Persiapan Musyawarah Daerah di Mangrove Beach, Kersik Putih.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="profil" style="background:#edf7ee;">
+        <div class="container">
+          <div class="section-head">
+            <div class="kicker">Profil Tokoh</div>
+            <h2>Harun Syafruddin, S.P.</h2>
+          </div>
+
+          <div class="profile-grid">
+            <div class="profile-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Harun Syafruddin" />
+            </div>
+            <div class="profile-card">
+              <p>
+                Penyuluh pertanian, penggerak organisasi profesi, dan pelaku agribisnis lokal.
+                Harun Syafruddin merupakan Penyuluh Pertanian Lapangan di Kabupaten Tanah Bumbu,
+                Kalimantan Selatan, yang mulai menjalankan tugas penyuluhan pertanian sejak 2005.
+              </p>
+              <p>
+                Dalam peran organisasinya, ia mendorong agar PERHIPTANI menjadi ruang kebersamaan profesi,
+                solidaritas anggota, dan dukungan terhadap kebutuhan nyata petani di lapangan.
+              </p>
+              <div class="quote">
+                “Dalam peran organisasi, ia mendorong agar PERHIPTANI menjadi ruang kebersamaan profesi,
+                solidaritas anggota, dan dukungan terhadap kebutuhan nyata petani di lapangan.”
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta-box">
+            <div>
+              <div class="kicker" style="color:#dfeee5;">Untuk wartawan dan media</div>
+              <h2>Informasi pers, agenda, dan profil organisasi</h2>
+            </div>
+            <a class="btn btn-secondary" href="#kontak">Hubungi Kami</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <div class="kicker">Kontak organisasi</div>
+            <h2>Sekretariat DPD PERHIPTANI Kabupaten Tanah Bumbu</h2>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="label">📍</div>
+                <div>
+                  <strong>Alamat</strong><br />
+                  Jalan Sepunggur, Komplek Perumnas Griya Flamboyan RT 2 Blok B No. 26,
+                  Desa Sepunggur, Kecamatan Kusan Tengah, Kabupaten Tanah Bumbu.
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="label">✉</div>
+                <div>
+                  <strong>Email</strong><br />
+                  tanahbumbuperhiptani@gmail.com
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="label">☎</div>
+                <div>
+                  <strong>Kontak</strong><br />
+                  0812-5119-8884
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="kicker">Pesan</div>
+            <h2>Kirim pertanyaan</h2>
+            <form>
+              <input type="text" placeholder="Nama lengkap" />
+              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Subjek" />
+              <textarea placeholder="Tulis pesan Anda..."></textarea>
+              <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="container footer-grid">
-        <div>
-          <div class="footer-brand">DPD PERHIPTANI TANAH BUMBU</div>
-          <div>Media informasi dan pemberdayaan petani.</div>
-        </div>
-
-        <div class="footer-links">
-          <a href="#tentang">Tentang</a>
-          <a href="#program">Program</a>
-          <a href="#kegiatan">Kegiatan</a>
-          <a href="#kontak">Kontak</a>
-        </div>
+      <div class="container footer-row">
+        <div>© DPD PERHIPTANI Kabupaten Tanah Bumbu</div>
+        <div>BERSATU · SOLID · BERKARAKTER</div>
       </div>
     </footer>
   </body>
